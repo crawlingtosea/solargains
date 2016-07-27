@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+<LinearLayout android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+
+>
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal">
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="光伏功率"
+                    android:textSize="20dp"/>
+            <LinearLayout>
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3K"
+                    android:id="@+id/cb3"
+
+            />
+
+            />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4K"
+
+                android:id="@+id/cb4" />
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5K"
+
+                        android:id="@+id/cb5" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="本地电价"
+                    android:textSize="20dp"/>
+            <EditText android:layout_width="200dp" android:layout_height="wrap_content" android:numeric="integer|decimal"
+                      android:text="0.56" android:textAlignment="center" android:layout_marginLeft="15dp"
+                      android:textSize="20dp"
+            android:id="@+id/et_bddj"
+            />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="15dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="国家补贴"
+                    android:textSize="20dp"/>
+            <EditText android:layout_width="200dp" android:layout_height="wrap_content"
+                      android:numeric="integer|decimal" android:text="0.42" android:textAlignment="center"
+                      android:layout_marginLeft="15dp" android:textSize="20dp"
+            android:id="@+id/et_gjbt"
+            />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="15dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每瓦钱数"
+                    android:textSize="20dp"/>
+            <EditText android:layout_width="200dp" android:layout_height="wrap_content"
+                      android:numeric="integer|decimal" android:text="10" android:textAlignment="center"
+                      android:layout_marginLeft="15dp" android:textSize="20dp"
+                      android:id="@+id/et_mwqs"
+            />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="15dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="日发电量"
+                    android:textSize="20dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0"
+                      android:id="@+id/tv_rfdl" android:layout_marginLeft="15dp" android:numeric="integer|decimal"
+                      android:textSize="20dp"
+
+            />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="15dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第天收益"
+                    android:textSize="20dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0"
+                      android:id="@+id/tv_mtsy" android:layout_marginLeft="15dp" android:numeric="integer|decimal"
+                      android:textSize="20dp"  android:maxLength="7"
+
+            />
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="15dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每年收益"
+                    android:textSize="20dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0"
+                      android:id="@+id/tv_mnsy" android:layout_marginLeft="15dp" android:numeric="integer|decimal"
+                      android:maxLength="7"
+                      android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="15dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="回本时间"
+                    android:textSize="20dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0"
+                      android:id="@+id/tv_hssj" android:layout_marginLeft="15dp" android:numeric="integer|decimal"
+                      android:maxLength="7"
+                      android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="15dp">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="纯收益数"
+                    android:textSize="20dp"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:id="@+id/tv_csys" android:layout_marginLeft="15dp" android:numeric="integer|decimal"
+                      android:textSize="20dp" android:hint="按25年计算"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+        >
+            <Button
+                    android:layout_span="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="计  算"
+                    android:id="@+id/btn_calc" android:layout_marginTop="15dp"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+        >
+            <Button
+                    android:layout_span="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重  置"
+                    android:id="@+id/btn_reset" android:layout_marginTop="15dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
+</ScrollView>
