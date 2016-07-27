@@ -175,7 +175,7 @@ private void doCalc() {
                     tv_mnsy.setText("0");
                     tv_hbsj.setText("0");
                     tv_csys.setText("0");
-                    et_mwqs.setText("0");
+                    et_mwqs.setText("10");
                     et_mwqs.setSelection(et_mwqs.getText().length());
                     et_bddj.setSelection(et_bddj.getText().length());
                     et_gjbt.setSelection(et_gjbt.getText().length());
